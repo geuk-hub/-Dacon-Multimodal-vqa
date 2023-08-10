@@ -20,7 +20,7 @@ for row in data:
     id, image_id, question, answer = row
     json_data.append({
         "id": id,
-        "image": "/content/dacon-multimodal-vqa/image/train/" + image_id + ".jpg",
+        "image": "/content/data/image/train/" + image_id + ".jpg",
         "conversations": [
             {
                 "from": "human",
@@ -48,7 +48,7 @@ for row in data:
     id, image_id, question = row
     json_data.append({
         "id": id,
-        "image": "/content/image/test/" + image_id + ".jpg",
+        "image": "/content/data/image/test/" + image_id + ".jpg",
         "text": question
         })
 
