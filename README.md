@@ -155,14 +155,6 @@ data
   
 ## 6. Inference
 
-```python
-%cd /content
-
-# go to your output directory
-from google.colab import drive
-drive.mount('/content/drive')
-```
-
 * You should change output_dir name 'checkpoint-*' to 'llava-*"
   * May be you might get a difference whether the name contains 'llava' or not
 
