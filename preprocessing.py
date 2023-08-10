@@ -4,23 +4,13 @@ import csv
 import json
 
 # unzip 
-zip_file_path = '/content/LLaVA/open.zip'
+%cd /content
 
-extracted_folder = '/content/dacon-multimodal-vqa'
-
-def extract_zip(zip_file, extract_to):
-    with zipfile.ZipFile(zip_file, 'r') as zip_ref:
-        zip_ref.extractall(extract_to)
-
-try:
-    extract_zip(zip_file_path, extracted_folder)
-    print(f"압축 파일을 성공적으로 해제하였습니다. 경로: {extracted_folder}")
-except Exception as e:
-    print(f"압축 파일 해제 중 오류가 발생하였습니다: {e}")
+!unzip -qq "/content/drive/MyDrive/data.zip"
 
 # ----------------------------------------------------------------
 # make 'output.json'
-with open('/content/dacon-multimodal-vqa/train.csv', 'r') as f:
+with open('/content/data/train.csv', 'r') as f:
     reader = csv.reader(f)
     next(reader)
     data = list(reader)
@@ -48,7 +38,7 @@ with open('output.json', 'w') as f:
 
 # ----------------------------------------------------------------
 # make 'test.json'
-with open('/content/test.csv', 'r') as f:
+with open('/content/data/test.csv', 'r') as f:
     reader = csv.reader(f)
     next(reader)
     data = list(reader)
