@@ -88,8 +88,8 @@ data
 !python /content/LLaVA/llava/train/train_mem.py \
     --model_name_or_path /content/LLaVA/vicuna-7b-v1.3 \
     --version v1 \
-    --data_path /content/dacon-multimodal-vqa/output.json \
-    --image_folder /content/dacon-multimodal-vqa/image/train \
+    --data_path /content/output.json \
+    --image_folder /content/data/image/train \
     --vision_tower openai/clip-vit-large-patch14 \
     --tune_mm_mlp_adapter True \
     --mm_vision_select_layer -2 \
@@ -125,8 +125,8 @@ data
 !python /content/LLaVA/llava/train/train_mem.py \
     --model_name_or_path /content/LLaVA/vicuna-7b-v1.3\
     --version v1 \
-    --data_path /content/dacon-multimodal-vqa/output.json \
-    --image_folder /content/dacon-multimodal-vqa/train \
+    --data_path /content/output.json \
+    --image_folder /content/data/image/train \
     --vision_tower openai/clip-vit-large-patch14 \
     --tune_mm_mlp_adapter True \
     --mm_vision_select_layer -2 \
