@@ -1,5 +1,7 @@
 # 월간 데이콘 이미지 기반 질의 응답 AI 경진대회
 
+**Public 3rd, Private 2nd**
+
 ## 1. Introduction
 
 **[주제]** 이미지 기반 질의 응답 AI 모델 개발
