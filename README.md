@@ -70,9 +70,9 @@ data
 * If else, download our file and run it in your '/content' directory
 ```python
 %cd /content
-!git clone https://github.com/pimang62/dacon-multimodal-vqa.git
+!git clone https://github.com/geuk-hub/-Dacon-Multimodal-vqa.git
 
-%cd /content/dacon-multimodal-vqa
+%cd /content/-Dacon-Multimodal-vqa
 !python preprocessing.py
 ```
 
