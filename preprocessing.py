@@ -9,7 +9,7 @@ import json
 !unzip -qq "/content/drive/MyDrive/data.zip"
 
 # ----------------------------------------------------------------
-# make 'output.json'
+# make 'train.json'
 with open('/content/data/train.csv', 'r') as f:
     reader = csv.reader(f)
     next(reader)
@@ -33,7 +33,7 @@ for row in data:
         ]
     })
 
-with open('output.json', 'w') as f:
+with open('train.json', 'w') as f:
     json.dump(json_data, f, indent=4)
 
 # ----------------------------------------------------------------
