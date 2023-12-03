@@ -38,7 +38,7 @@ data
 
 ## 3. Setup
 * In Colab-PRO or PRO+ Users only
-* Set up for sure GPU A100
+* Set up for GPU A100
 
 ### Clone LLaVA
 ```python
